@@ -3,7 +3,7 @@ angular.module("Controlador", [])
     //Controller
     .controller("DirectiveController", function($scope, $http) {
         $scope.repos = [];
-   $http.get("https://api.github.com/users/twitter/repos")
+   $http.get("https://api.github.com/users/oruizrubio/repos")
             .success(function(data) {
                 $scope.posts = data;
                 for (var i = data.length - 1; i >= 0; i--) {
