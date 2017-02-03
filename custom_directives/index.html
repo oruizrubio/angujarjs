@@ -46,8 +46,8 @@
 				<div class="circular" back-img="{{repo.owner.avatar_url}}">
 				</div>
 				<h1 class="inline-block">
-				<!--a href="{{repo.html_url}}">{{repo.full_name}}</a-->
-				{{repo.full_name}}
+				<a href="{{repo.html_url}}">{{repo.full_name}}</a>
+			<!--	{{repo.full_name}}-->
 				</h1>
 				<a ng-show="main_repo" ng-click="clean()" class="clean">      <b>Clean</b></a>
 			</li>
