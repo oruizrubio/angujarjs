@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="Controlador">
+	<head>
+		<meta charset="utf-8">
+		<title>Hola mundo con AngularJS</title>
+		<link rel="stylesheet" href="autocomplete-jquery-ui.structure.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script src="https://code.angularjs.org/1.4.0-beta.5/angular-route.min.js"></script>
+		<script src="//code.jquery.com/jquery-latest.min.js"></script>
+		<script src="autocomplete-jquery-ui.js"></script>
+		<script src="app.js"></script>
+		<script src="directives.js"></script>
+		<script src="controllers.js"></script>
+		<style>
+			body,html{
+			  text-align: center;
+			  background-color: #eee;
+			}
+
+			ul {
+			  list-style-type: none;
+			}
+
+			.circular{
+			  border-radius: 50%;
+			  width: 100px;
+			  height: 100px;
+			  display: inline-block;
+			}
+
+			input{
+			  width: 100%;
+			  padding: 1em;
+			  border: 1px solid rgb(204, 204, 204);
+			  border-radius: 5px;
+			  margin-bottom: 50px;
+			}
+
+			.clean{
+			  color:rgb(198, 40, 40);
+			  cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div ng-view></div>
+
+	</body>
+</html>
